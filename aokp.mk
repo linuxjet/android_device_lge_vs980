@@ -7,9 +7,6 @@ $(call inherit-product, vendor/aokp/configs/cdma.mk)
 # Inherit device configuration
 $(call inherit-product, device/lge/vs980/vs980.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    
-BUILD_FINGERPRINT=lge/g2_vzw/g2:4.2.2/JDQ39B/VS98011A.1378346052:user/release-keys \
-    PRIVATE_BUILD_DESC="g2_vzw-user 4.2.2 JDQ39B VS98011A.1378346052 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=lge/g2_vzw/g2:4.2.2/JDQ39B/VS98011A.1378346052:user/release-keys PRIVATE_BUILD_DESC="g2_vzw-user 4.2.2 JDQ39B VS98011A.1378346052 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-verizon
