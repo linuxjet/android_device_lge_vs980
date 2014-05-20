@@ -1,8 +1,9 @@
 # Inherit some common AOKP stuff
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/aokp/configs/cdma.mk)
+$(call inherit-product, vendor/aicp/configs/cdma.mk)
+$(call inherit-product, vendor/aicp/configs/vzw.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/vs980/vs980.mk)
