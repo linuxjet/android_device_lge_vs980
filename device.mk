@@ -31,6 +31,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/prebuilt/etc/gps.conf:system/etc/gps.conf
+
 # OTA ID
 PRODUCT_PROPERTY_OVERRIDES += \
     otaupdater.otaid=liquidvs980
